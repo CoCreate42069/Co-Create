@@ -1,0 +1,98 @@
+<nav class="sidebar close">
+  <header>
+      <div class="image-text">
+          <span class="image">
+          <!-- <img src="images\c08ea199ab270e631b90f02ba75a289f.jpg" alt=""> -->
+          </span>
+
+          <div class="text logo-text">
+              <span class="name">Hi There!</span>
+              <span class="profession">Diya</span>
+          </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+      <div class="menu">
+
+          <li class="search-box">
+              <i class='bx bx-search icon'></i>
+              <input type="text" placeholder="Search...">
+          </li>
+
+              <li class="nav-link">
+                <a href="/">
+                      <i class='bx bx-home-alt icon' ></i>
+                      <span class="text nav-text">Dashboard</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="#">
+                      <i class='bx bx-chat icon'></i>
+                      <span class="text nav-text">Messages</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="#">
+                      <i class='bx bx-bell icon'></i>
+                      <span class="text nav-text">Notifications</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="/profile/<%= user.username %>">
+                      <i class='bx bx-user icon'></i>
+                      <span class="text nav-text">Profile</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="/create-post">
+                      <i class='bx bx-plus-circle icon'></i>
+                      <span class="text nav-text">New Projects</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="#">
+                      <i class='bx bxs-magic-wand icon'></i>
+                      <span class="text nav-text">"Mia"-coming soon</span>
+                  </a>
+              </li>
+
+
+      </div>
+
+
+      <br>
+      <br>
+      <div class="bottom-content">
+          <li class="">
+              <a href="#">
+                  <form action="/logout" method="POST" class="d-inline">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <button class="btn btn-sm"><i class='bx bx-log-out icon' ></i></button>
+                  </form>
+              </a>
+          </li>
+
+          <li class="mode">
+              <div class="sun-moon">
+                  <i class='bx bx-moon icon moon'></i>
+                  <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">Dark mode</span>
+
+              <div class="toggle-switch">
+                  <span class="switch"></span>
+              </div>
+          </li>
+          
+      </div>
+  </div>
+
+</nav>
